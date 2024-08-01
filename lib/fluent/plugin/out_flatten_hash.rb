@@ -12,7 +12,7 @@ module Fluent::Plugin
 
     config_param :tag, :string, default: nil
     config_param :separator, :string, default: '.'
-    config_param :flatten_array, :bool, default: true
+    config_param :flatten_array, :bool, default: false
 
     def configure(conf)
       super
