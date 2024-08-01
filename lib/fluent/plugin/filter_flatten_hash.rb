@@ -8,7 +8,7 @@ module Fluent::Plugin
     include Fluent::FlattenHashUtil
 
     config_param :separator, :string, default: '.'
-    config_param :flatten_array, :bool, default: true
+    config_param :flatten_array, :bool, default: false
 
     def configure(conf)
       super
